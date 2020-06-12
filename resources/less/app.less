@@ -3,7 +3,6 @@
 /*---------------------------------------------------
     Font
 ---------------------------------------------------*/
-
 body, h1, h2, h3, h4 {
     font-size: 1.05em;
     font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
@@ -37,6 +36,8 @@ body {
     color: #333;
     font-size: 16px;
     -ms-touch-action: none; /* disable wp8 zoom on double-tap */
+    padding-top: constant(safe-area-inset-top) !important; /* iOS 11.0 */
+    padding-top: env(safe-area-inset-top) !important; /* iOS 11.2 */
 }
 
 a {
